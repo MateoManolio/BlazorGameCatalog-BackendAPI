@@ -1,0 +1,30 @@
+GET http://localhost:3000/games
+
+###
+GET http://localhost:3000/games/1
+
+###
+POST http://localhost:3000/games
+Content-Type: application/json
+
+{
+    "name": "Dishonored",
+    "genreId": 4,
+    "price": 8.89,
+    "releaseDate": "2012-10-08"
+}
+
+###
+PUT http://localhost:3000/games/5
+Content-Type: application/json
+
+{
+    "id": 5,
+    "name": "Cyberpunk 2077",
+    "genreId": 2,
+    "price": 59.99,
+    "releaseDate": "2020-12-10"
+}
+
+###
+DELETE http://localhost:3000/games/2
